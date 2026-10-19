@@ -119,12 +119,16 @@ export let vacancies: Vacancy[] = [
 export const CANDIDATES_BY_VACANCY: Record<string, CandidateMatch[]> = {
   'vac-3': [
     {
+      id: 'match-1',
+      vacancyId: 'vac-3',
+      status: 'ACTIVE',
       candidateId: 'cand-1',
       fullName: 'Mariana Souza',
       headline: 'Senior UX Designer • Ex-Nubank • 8 anos de experiência',
       location: 'Rio de Janeiro, RJ',
       score: 96,
       explanation: {
+        locationMatch: true,
         metRequirements: 3,
         totalRequirements: 3,
         missingMandatory: [],
@@ -136,12 +140,16 @@ export const CANDIDATES_BY_VACANCY: Record<string, CandidateMatch[]> = {
       },
     },
     {
+      id: 'match-2',
+      vacancyId: 'vac-3',
+      status: 'ACTIVE',
       candidateId: 'cand-2',
       fullName: 'Rafael Lima',
       headline: 'Product Designer • Especialista em mobile',
       location: 'São Paulo, SP',
       score: 81,
       explanation: {
+        locationMatch: false,
         metRequirements: 2,
         totalRequirements: 3,
         missingMandatory: [],
@@ -152,12 +160,16 @@ export const CANDIDATES_BY_VACANCY: Record<string, CandidateMatch[]> = {
       },
     },
     {
+      id: 'match-3',
+      vacancyId: 'vac-3',
+      status: 'ACTIVE',
       candidateId: 'cand-3',
       fullName: 'Juliana Costa',
       headline: 'UX/UI Designer • Foco em produtos B2B',
       location: 'Remoto',
       score: 74,
       explanation: {
+        locationMatch: false,
         metRequirements: 2,
         totalRequirements: 3,
         missingMandatory: [],
@@ -168,12 +180,16 @@ export const CANDIDATES_BY_VACANCY: Record<string, CandidateMatch[]> = {
       },
     },
     {
+      id: 'match-4',
+      vacancyId: 'vac-3',
+      status: 'ACTIVE',
       candidateId: 'cand-4',
       fullName: 'Pedro Alves',
       headline: 'UX Designer Pleno em transição para sênior',
       location: 'Rio de Janeiro, RJ',
       score: 61,
       explanation: {
+        locationMatch: true,
         metRequirements: 1,
         totalRequirements: 3,
         missingMandatory: ['Design Systems'],
@@ -181,12 +197,16 @@ export const CANDIDATES_BY_VACANCY: Record<string, CandidateMatch[]> = {
       },
     },
     {
+      id: 'match-5',
+      vacancyId: 'vac-3',
+      status: 'ACTIVE',
       candidateId: 'cand-5',
       fullName: 'Fernanda Rocha',
       headline: 'Designer Visual com transição para UX',
       location: 'Belo Horizonte, MG',
       score: 45,
       explanation: {
+        locationMatch: false,
         metRequirements: 1,
         totalRequirements: 3,
         missingMandatory: ['Design Systems'],
