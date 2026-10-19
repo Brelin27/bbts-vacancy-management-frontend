@@ -4,7 +4,12 @@ import { IntegrationLog } from '../../shared/types';
 
 const BASE = import.meta.env.VITE_API_URL ?? '';
 const token = () => sessionStorage.getItem('bbts_token');
-const authHeader = () => token() ? { Authorization: `Bearer ${token()}` } : {};
+const authHeader = (): Record<string, string> => {
+  const currentToken = token();
+  return currentToken
+    ? { Authorization: `Bearer ${currentToken}` }
+    : {};
+};
 
 async function toCamel(res: Response): Promise<IntegrationLog> {
   const data = await res.json();
